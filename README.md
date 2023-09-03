@@ -1,28 +1,25 @@
-# ESPHome Thermostat Project V3
+# My DIY Thermostat
 
-Use the "**Code**" button above "**Download ZIP**" to get everything you need.
+Using some off the shelf parts a 3D printer to make an OK thermostat
 
-![image](https://user-images.githubusercontent.com/51385971/118730655-e501b480-b82f-11eb-8e3b-8b7ea86f9e68.png)
+#Major Changes
 
-*Un-ZIP and copy the "**_fonts**" and "**_icons**" folders to your "esphome" folder BEFORE you copy/paste the yaml in to ESPHome*
+Using a diffrent temprature sensor
+Using a relay interlock so the heat and cool can never be on at the same time
+Made the push in on the encoder more featurefull
+Relay board included inside the enclosure
 
-* 3D Printer files provided are as seen in the tutorial and can be used as a base model for your own 'Front Plate' mounting solutions.
+#Problems
 
-## Please Be Aware:
-* Depending on the supplier, SOME OLED displays have the VCC & GND (0v) pins reversed - Be sure to check and adjust your build accordingly.
+DST22 temprature sensor has wildly high readings
+Needs fine adjustment on the start and stop time
 
-# Watch the full tutorial here: https://youtu.be/RorDXsYIrnQ
+#Todo
 
-
-## I have also made a custom PCB for this project. Grab one here: https://www.ebay.co.uk/itm/203570959081
-![IMG_20211218_123057](https://user-images.githubusercontent.com/51385971/154135286-46e4700d-89c9-44cd-8aa5-a98ebd865091.jpg)
-![IMG_20211218_123138](https://user-images.githubusercontent.com/51385971/154135295-7606a36f-7edd-40f7-992a-e6abf516457d.jpg)
-![IMG_20211218_123206](https://user-images.githubusercontent.com/51385971/154135311-8bd92801-78bd-403f-a6ac-fb7d63f011c3.jpg)
-
-
-___
-#### 💖 Found this useful, want to say '*Thanks*' and support my efforts. *CHEERS*🍺
-| Buy me a Coffee | PATREON |
-|-----------------|---------|
-| https://www.buymeacoffee.com/3ative | https://www.patreon.com/3ative |
-
+I would like it to take in account:
+    other temprature sensors in the house
+    time of day
+    outside temprature
+    humidity
+    barametic preasure
+    house ocupency
