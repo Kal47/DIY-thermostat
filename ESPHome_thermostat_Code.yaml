@@ -108,7 +108,7 @@ climate:
       max_temperature: 81 °F
     name: "${room} Thermostat"
     id: this_thermostat
-    sensor: internal_temperature
+    sensor: !lambda "return internal_temperature + temperature_offset;"
 
 ### Updated for ESPHome v2022.10.0 Onwards
     default_preset: Home                      ### NEW! Use this to set Preset
@@ -177,6 +177,7 @@ sensor:
   - platform: homeassistant
     name: "Calculated Temperature Offset"
     entity_id: sensor.temperature_offset
+    id: temperature_offset
 
   - platform: template
     id: oled_contrast
